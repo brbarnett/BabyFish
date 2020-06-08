@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowCamera : MonoBehaviour
 {
-    public Vector3 OffsetFromPlayer = new Vector3(-2.5f, 1f, -2.5f);
+    public Vector3 OffsetFromPlayer = new Vector3(0, 2f, -4f);  // 2 up and 4 backward
 
     public PlayerController Player;
 
