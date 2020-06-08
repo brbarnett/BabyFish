@@ -20,9 +20,11 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        // get unit vector in the direction of combined keys pressed. ignore if there is no direction (i.e., no keys pressed)
         var direction = this.GetThrustDirection();
         if (direction == Vector3.zero) return;
 
+        // set force to be applied as thrust in the direction of combined keys pressed
         var force = direction * this.Thrust * Time.fixedDeltaTime;
 
         // center of mass is 1 unit from the origin, which means it's at the center of the sphere at the end of the capsule.
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour
         // convert to world coordinates and apply force.
         var forcePoint = this.transform.TransformPoint(this._rigidbody.centerOfMass + new Vector3(0, 0.5f, 0));
 
+        // apply force
         this._rigidbody.AddForceAtPosition(force, forcePoint);
     }
 
