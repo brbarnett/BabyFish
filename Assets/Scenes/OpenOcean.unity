@@ -290,10 +290,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1296258824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: add784a16c76fb848b115e62f54dbffb, type: 3}
+  m_Script: {fileID: 11500000, guid: 429ac0deb8123a142a69bc59c1be9b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OffsetFromPlayer: {x: 0, y: 2, z: -4}
+  DistanceFromPlayer: 5
   Player: {fileID: 1545092104}
 --- !u!1 &1545092103
 GameObject:
