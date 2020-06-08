@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FreeCamera : MonoBehaviour
 {
-    public Vector3 OffsetFromPlayer = new Vector3(0, 2f, -4f);  // 2 up and 4 backward
+    public Vector3 OffsetFromPlayer = new Vector3(0, -2f, -4f);  // 2 up and 4 backward
     public PlayerController Player;
     public float Sensitivity = 1.0f;
 
