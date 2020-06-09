@@ -8,11 +8,6 @@ public class FreeCamera : MonoBehaviour
     public PlayerController Player;
     public float Sensitivity = 1.0f;
 
-    void Start()
-    {
-        this.transform.position = this.transform.position + this.OffsetFromPlayer;
-    }
-
     void Update()
     {
         if (this.Player == null) return;
