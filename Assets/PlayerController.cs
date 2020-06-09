@@ -42,27 +42,27 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            direction += Vector3.forward;
+            direction += this.transform.up;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            direction += Vector3.left;
+            direction += this.transform.right;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            direction += Vector3.back;
+            direction += -this.transform.up;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            direction += Vector3.right;
+            direction += -this.transform.right;
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            direction += Vector3.up;
+            direction += this.transform.forward;
         }
         if (Input.GetKey(KeyCode.Space))
         {
-            direction += Vector3.down;
+            direction += -this.transform.forward;
         }
 
         return direction.normalized;
