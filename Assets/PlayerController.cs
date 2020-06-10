@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A))
         {
-            direction += this.transform.right;
+            direction += -this.transform.right;
         }
         if (Input.GetKey(KeyCode.S))
         {
@@ -54,15 +54,15 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.D))
         {
-            direction += -this.transform.right;
+            direction += this.transform.right;
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            direction += this.transform.forward;
+            direction += -this.transform.forward;
         }
         if (Input.GetKey(KeyCode.Space))
         {
-            direction += -this.transform.forward;
+            direction += this.transform.forward;
         }
 
         return direction.normalized;
